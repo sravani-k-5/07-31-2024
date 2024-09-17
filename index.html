@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            width: 90px;
+            height: 60px;
+            background-color: aquamarine;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .head:hover {
+            background-color: blueviolet;
+        }
+
+        .head:focus-within+.content {
+            display: block;
+        }
+
+        .content {
+            display: none;
+            width: 30px;
+            height: 30px;
+            text-align: left;
+            /* padding-left: 60px;
+            padding-bottom: 60px; */
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="head">My Aadhar</button>
+    <div class="content">
+        <table>
+            <tr>
+            <th><a href="#">Document update</a></th>
+            <th><a href="#">Book an appointment</a></th>
+            <th><a href="#">Verify aadhar number</a></th>
+            <th><a href="#">features of aadhar</a></th>
+            <th><a href="#">mAdhar for Android</a></th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
